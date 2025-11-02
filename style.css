@@ -9,6 +9,16 @@ body {
 video {
   border-radius: 10px;
   box-shadow: 0 0px 15px rgba(0, 0, 0, 0.7);
+  max-height: 300px;
+}
+
+#creator-logo {
+  width: 90px;
+  border-radius: 500px;
+}
+
+#creator {
+ 
 }
 
 /*=== NavBar ===*/
