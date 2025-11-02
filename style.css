@@ -1,0 +1,198 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  border-radius: 10px;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+/*=== NavBar ===*/
+#title {
+  width: 125px;
+  margin-left: 10px;
+}
+
+#nav {
+  background-color: #121212cb;
+  color: #e8dcc9;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
+  height: 100px;
+  width: 100%;
+  backdrop-filter: blur(10px); /* the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+#nav.hide {
+  transform: translateY(-100%);
+}
+
+#nav-link {
+  background-color: #2e2d2dee;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.9);
+  border: 1px solid #30303096;
+  border-radius: 10px;
+  box-shadow: 0 0px 15px rgba(2, 2, 2, 0.7);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  #nav-link {
+    margin-left: 25px; /* only applies on large screens */
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+#nav-link:hover {
+  border: 1px solid #6b6b6b;
+  background-color: #646464c9;
+  color: #e8dcc9;
+  text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.9);
+}
+
+#playlists {
+  background-color: #2e2d2dee;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.9);
+  border: 1px solid #30303096;
+  border-radius: 10px;
+  box-shadow: 0 0px 15px rgba(102, 14, 14, 0.7);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  #playlists {
+    margin-left: 25px; /* only applies on large screens */
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+#playlists:hover {
+  border: 1px solid #6b6b6b;
+  background-color: #646464c9;
+  color: #e8dcc9;
+  text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0px 15px rgba(255, 255, 255, 0.9);
+}
+
+#nav-button {
+  background-color: white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.9);
+  margin-right: 10px;
+}
+
+
+#nav-button:hover {
+  background-color: #e2dfdf;
+  box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.9);
+}
+
+#active {
+  background-color: #646464c9;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.9);
+  border: 1px solid #30303096;
+  border-radius: 8px;
+  
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1;
+}
+
+#active:hover {
+  border: 1px solid #30303096;
+  background-color: #2e2d2dee;
+  color: #e8dcc9;
+  text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.9);
+}
+
+/* Applies only to small and medium screens (below 992px) */
+@media (max-width: 991.98px) {
+  #active {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  #active {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 25px; /* only applies on large screens */
+    box-shadow: 0 0px 15px rgba(102, 14, 14, 0.7);
+  }
+}
+
+@media (min-width: 992px) {
+  #search {
+    margin-right: 25px; /* only applies on large screens */
+  }
+}
+
+/*===  Bottom NavBar ===*/
+#tabs {
+background-color: #121212cb;
+  color: white;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  backdrop-filter: blur(10px); /* the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  z-index: 1;
+  border-radius: 5px;
+  border-color: rgba(49, 49, 49, 0);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*===  Cards ===*/
+#card {
+  background-color: #121212;
+  color: white;
+  width: 100%;
+  border-color: #121212;
+}
+
+/*===  Footer ===*/
+#footer-tab {
+  background-color: #121212cb;
+  color: white;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  backdrop-filter: blur(10px); /* the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}  
+
+@media (min-width: 992px) {
+  #footer-tab {
+    position: fixed; /* only applies on large screens */
+    top: 0;
+  }
+}
+
+#active-tab {
+  background-color: #2e2d2dee;
+}
+
+#inactive {
+  background-color: #12121200;
+}
